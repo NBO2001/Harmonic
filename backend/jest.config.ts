@@ -18,7 +18,6 @@ const config: Config = {
   transformIgnorePatterns: [
     '/node_modules/', // Ignore transformations in node_modules
   ],
-  setupFilesAfterEnv: ['./src/prismaMock/singleton.ts'],
 
 };
 
