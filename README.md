@@ -1,3 +1,9 @@
+# Harmoniq
+
+## Sobre o repositório
+
+Esse repositório é um fork forçado do repositório original do projeto Harmoniq, que foi desenvolvido no curso de Web Academy da UFAM. [Ref.](https://webacademy.icomp.ufam.edu.br/portfolio)
+
 #### OBS: se não tiver o prettier configurado no VSCode, antes de fazer o commit, rodar o comando:
 
 - `npm run format`
