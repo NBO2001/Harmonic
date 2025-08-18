@@ -40,24 +40,21 @@ const playlistRecomendation = async (
   return response;
 };
 
+const artistsRecommend = async (userId: string) => {
+  const artists: Artist[] = [];
 
+  const records: ArtistsRecommend[] =
+    await prisma.$queryRaw`SELECT * FROM get_top_artists(${userId})`;
 
-const artistsRecommend = async (
-  userId: string
-) => {
-
-  const artists: Artist[] = []
-
-  const records: ArtistsRecommend[] = await prisma.$queryRaw`SELECT * FROM get_top_artists(${userId})`;
-  
-  records.map( (art) => {
-    artists.push({id: art.id_top, name: art.name_top, image_url: art.image_url_top})
+  records.map((art) => {
+    artists.push({
+      id: art.id_top,
+      name: art.name_top,
+      image_url: art.image_url_top,
+    });
   });
 
   return artists;
-
-}
-
-
+};
 
 export default { playlistRecomendation, artistsRecommend };

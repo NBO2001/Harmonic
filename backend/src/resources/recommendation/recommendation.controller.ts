@@ -30,9 +30,7 @@ const listAllRecommends = async (req: Request, res: Response) => {
   }
 };
 
-
 const listAllArtistsRecommends = async (req: Request, res: Response) => {
-
   try {
     const artits = await recommendationService.artistsRecommend(
       req.session.uid!
@@ -56,7 +54,6 @@ const listAllArtistsRecommends = async (req: Request, res: Response) => {
       */
     res.status(501).json({ error: true });
   }
-  
-}
+};
 
 export default { listAllRecommends, listAllArtistsRecommends };

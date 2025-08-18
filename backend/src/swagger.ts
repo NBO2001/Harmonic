@@ -143,20 +143,20 @@ const doc = {
     Artist: {
       id: "54d5s4d5a4ds5646sa",
       name: "dsadsdasds",
-      image_url: ""
+      image_url: "",
     },
     Artists: [
       {
         id: "54d5s4d5a4ds5646sa",
         name: "dsadsdasds",
-        image_url: ""
+        image_url: "",
       },
       {
         id: "54d5s4d5a4ds5646sa",
         name: "dsadsdasds",
-        image_url: ""
-      }
-    ]
+        image_url: "",
+      },
+    ],
   },
   host: `${process.env.HOST}:${process.env.PORT}`,
 };

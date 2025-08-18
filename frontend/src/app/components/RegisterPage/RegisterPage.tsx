@@ -1,6 +1,6 @@
 "use client";
 
-import React, { Dispatch, SetStateAction, useRef, useState } from "react";
+import React, { Dispatch, SetStateAction, useState } from "react";
 import {
   Description,
   RightPanel,
@@ -11,12 +11,6 @@ import {
   Wrapper,
   Form,
 } from "../LoginPanel/styles";
-import {
-  Stepper,
-  StepperProps,
-  StepperRefAttributes,
-} from "primereact/stepper";
-import { StepperPanel } from "primereact/stepperpanel";
 import { Button } from "primereact/button";
 import { InputText } from "primereact/inputtext";
 import { Password } from "primereact/password";
@@ -42,8 +36,6 @@ const RegisterPage = ({ setLoginForm }: IRegisterPage) => {
       "https://cdn.pixabay.com/photo/2014/04/13/20/49/cat-323262_1280.jpg",
   });
   const [passConfim, setPassConfim] = useState<string | undefined>("");
-
-  const stepperRef = useRef<StepperRefAttributes | null>(null);
 
   const submit = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();

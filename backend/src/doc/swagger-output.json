@@ -7,15 +7,11 @@
   },
   "host": "localhost:4444",
   "basePath": "/",
-  "schemes": [
-    "http"
-  ],
+  "schemes": ["http"],
   "paths": {
     "/api/v1/music/{id}": {
       "get": {
-        "tags": [
-          "Music"
-        ],
+        "tags": ["Music"],
         "summary": "Stream music by ID.",
         "description": "",
         "parameters": [
@@ -99,9 +95,7 @@
     },
     "/api/v1/music/details/{id}": {
       "get": {
-        "tags": [
-          "Music"
-        ],
+        "tags": ["Music"],
         "summary": "Get metadata of the music by ID.",
         "description": "",
         "parameters": [
@@ -191,9 +185,7 @@
     },
     "/api/v1/music/search": {
       "post": {
-        "tags": [
-          "Music"
-        ],
+        "tags": ["Music"],
         "summary": "Search music by title, album, or artist.",
         "description": "",
         "parameters": [
@@ -264,9 +256,7 @@
     },
     "/api/v1/playlist/": {
       "get": {
-        "tags": [
-          "Playlist"
-        ],
+        "tags": ["Playlist"],
         "summary": "List all playlists.",
         "description": "",
         "responses": {
@@ -315,9 +305,7 @@
         }
       },
       "post": {
-        "tags": [
-          "Playlist"
-        ],
+        "tags": ["Playlist"],
         "summary": "Create a new playlist.",
         "description": "",
         "parameters": [
@@ -379,9 +367,7 @@
     },
     "/api/v1/playlist/{playlistId}": {
       "get": {
-        "tags": [
-          "Playlist"
-        ],
+        "tags": ["Playlist"],
         "summary": "Read a playlist by ID.",
         "description": "",
         "parameters": [
@@ -446,9 +432,7 @@
         }
       },
       "put": {
-        "tags": [
-          "Playlist"
-        ],
+        "tags": ["Playlist"],
         "summary": "Update a playlist by ID.",
         "description": "",
         "parameters": [
@@ -515,9 +499,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "Playlist"
-        ],
+        "tags": ["Playlist"],
         "summary": "Remove a playlist by ID.",
         "description": "",
         "parameters": [
@@ -577,9 +559,7 @@
     },
     "/api/v1/playlist/{playlistId}/{musicId}": {
       "post": {
-        "tags": [
-          "Playlist"
-        ],
+        "tags": ["Playlist"],
         "summary": "Add a song to a playlist.",
         "description": "",
         "parameters": [
@@ -644,9 +624,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "Playlist"
-        ],
+        "tags": ["Playlist"],
         "summary": "Remove a song from a playlist.",
         "description": "",
         "parameters": [
@@ -713,9 +691,7 @@
     },
     "/api/v1/user/": {
       "post": {
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "summary": "Create a new user",
         "description": "",
         "parameters": [
@@ -807,9 +783,7 @@
     },
     "/api/v1/user/{id}": {
       "get": {
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "summary": "Find User by id",
         "description": "",
         "parameters": [
@@ -864,9 +838,7 @@
         }
       },
       "put": {
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "summary": "Update a user by id",
         "description": "",
         "parameters": [
@@ -894,9 +866,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "summary": "Delete a user by id",
         "description": "",
         "parameters": [
@@ -956,9 +926,7 @@
     },
     "/api/v1/authentication/signup": {
       "post": {
-        "tags": [
-          "Auth"
-        ],
+        "tags": ["Auth"],
         "summary": "Sign up a new user",
         "description": "",
         "parameters": [
@@ -1017,9 +985,7 @@
     },
     "/api/v1/authentication/login": {
       "post": {
-        "tags": [
-          "Auth"
-        ],
+        "tags": ["Auth"],
         "summary": "Make user login.",
         "description": "",
         "parameters": [
@@ -1078,9 +1044,7 @@
     },
     "/api/v1/authentication/logout": {
       "post": {
-        "tags": [
-          "Auth"
-        ],
+        "tags": ["Auth"],
         "summary": "Logout the user",
         "description": "",
         "responses": {
@@ -1155,9 +1119,7 @@
     },
     "/api/v1/authentication/check": {
       "post": {
-        "tags": [
-          "Auth"
-        ],
+        "tags": ["Auth"],
         "summary": "Check session status",
         "description": "Returns the session UUID if the session is active.",
         "responses": {
@@ -1196,9 +1158,7 @@
     },
     "/api/v1/recommedations/playlists": {
       "get": {
-        "tags": [
-          "Recommedations"
-        ],
+        "tags": ["Recommedations"],
         "summary": "Return playlist recommendations to user.",
         "description": "",
         "responses": {
@@ -1249,9 +1209,7 @@
     },
     "/api/v1/recommedations/artists": {
       "get": {
-        "tags": [
-          "Recommedations"
-        ],
+        "tags": ["Recommedations"],
         "description": "",
         "responses": {
           "200": {

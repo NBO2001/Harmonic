@@ -19,7 +19,7 @@ declare module "express-session" {
 
 dotenv.config();
 
-//onst PORT = process.env.PORT;
+const PORT = process.env.PORT || 4444;
 
 const app = express();
 
@@ -82,6 +82,6 @@ const httpsOptions = {
 };
 
 const server = https.createServer(httpsOptions, app);
-server.listen(443, () => {
-  console.log("Servidor rodando em https://localhost:443");
+server.listen(PORT, () => {
+  console.log(`Servidor rodando em https://localhost:${PORT}`);
 });
